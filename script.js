@@ -10,7 +10,13 @@ function draw() {
 function drawSnake() {      
     snake.forEach((segment) => {
         const snakeElement = createGameElement('div', 'snake');
-
+        setPosition(snakeElement, segment);
     })
-
 }
+
+function createGameElement(tag, className) {
+    const element = document.createElement(tag);
+    element.className = className;
+    return element;
+}
+
