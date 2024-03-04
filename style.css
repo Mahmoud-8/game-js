@@ -46,11 +46,22 @@ body, .snake {
     margin: 0;
 }
 
-#scores {
+.scores {
     display: flex;
     justify-content: space-between;
 }
 
 #score {
     color: #abb78a;
+}
+
+#highScore, score {
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+#highScore {
+    color: #d8ddca;
+    display: none;
 }
