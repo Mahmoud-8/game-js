@@ -60,4 +60,12 @@ function move() {
       head.x++;
       break;
   }
+    snake.unshift(head);
+
+    snake.pop();
 }
+
+setInterval(() => {
+    move();
+  draw();
+}, 200);
