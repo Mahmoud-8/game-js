@@ -4,6 +4,9 @@ const gridSize = 20;
 let snake = [{ x: 10, y: 10 }];
 let food = generateFood();
 let direction = "right";
+let gameInterval;
+let gameSpeedDelay = 200;
+let gameStarted = false;
 
 function draw() {
   board.innerHTML = "";
@@ -62,10 +65,25 @@ function move() {
   }
     snake.unshift(head);
 
-    snake.pop();
+    // snake.pop();
+    if (head.x === food.x && head.y === food.y) {
+      food = generateFood();
+      clearInterval();
+      gameInterval = setInterval(() => {
+        move();
+        draw();
+      },gameSpeedDelay);
+    } else {
+      snake.pop();
+    }
 }
 
-setInterval(() => {
-    move();
-  draw();
-}, 200);
+// setInterval(() => {
+//     move();
+//   draw();
+// }, 200);
+
+
+function startGame() {
+    gameStarted = true;
+}
