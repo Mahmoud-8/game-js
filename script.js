@@ -66,26 +66,4 @@ function move() {
   }
     snake.unshift(head);
 
-    // snake.pop();
-    if (head.x === food.x && head.y === food.y) {
-      food = generateFood();
-      clearInterval();
-      gameInterval = setInterval(() => {
-        move();
-        draw();
-      },gameSpeedDelay);
-    } else {
-      snake.pop();
-    }
-}
-
-// setInterval(() => {
-//     move();
-//   draw();
-// }, 200);
-
-
-function startGame() {
-    gameStarted = true;
-
-}
+ 
