@@ -1,7 +1,7 @@
 # Snake Game
 
 Welcome to the Snake Game project! This is a simple browser-based game where you control a snake to collect food and grow longer. Below, you'll find information on how to set up and play the game.
-
+![alt text](<Screenshot 2024-03-07 at 6.58.47 PM.png>)
 ## Table of Contents
 
 1. [Introduction](#introduction)
