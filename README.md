@@ -10,7 +10,7 @@ Welcome to the Snake Game project! This is a simple browser-based game where you
 4. [Controls](#controls)
 5. [Customization](#customization)
 6. [Acknowledgments](#acknowledgments)
-
+![alt text](<Screenshot 2024-03-07 at 7.01.51 PM.png>)
 ## Introduction
 
 This project is a classic Snake Game implemented using HTML, CSS, and JavaScript. It provides a straightforward and enjoyable gaming experience, challenging you to grow the snake while avoiding collisions with the game borders and yourself.
