@@ -136,6 +136,23 @@ function increaseSpeed() {
     gameSpeedDelay -= 1;
   }
 }
+
+function checkCollision() {
+  const head = snake[0];
+  if (
+    head.x < 1 ||
+    head.x > gridSize ||
+    head.y < 1 ||
+    head.y) {
+      restGame();
+    } 
+    for (let i = 1; i < snake.length; i++) {
+      if (head.x === snake[i].x && head.y === snake[i].y) {
+        restGame();
+      }
+    }
+} 
+
   
 
 
