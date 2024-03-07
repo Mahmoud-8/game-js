@@ -1,5 +1,6 @@
 const board = document.getElementById("game-board");
 const instructionText = document.getElementById("instruction-text");
+const logo = document.getElementById("logo");
 
 const gridSize = 20;
 let snake = [{ x: 10, y: 10 }];
@@ -87,5 +88,11 @@ function move() {
 
 function startGame() {
     gameStarted = true;
-
+    instructionText.style.display = "none";
+   logo.style.display = "none";
+    gameInterval = setInterval(() => {
+      move();
+      // checkCollision();
+      draw();
+    } , gameSpeedDelay);
 }
